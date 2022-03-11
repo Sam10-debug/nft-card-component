@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(217, 54%, 11%);
+}
+.container {
+  padding: 1.5rem;
+  position: relative;
+  border-radius: 0.5rem;
+  background: hsl(216, 50%, 16%);
+}
+.nothing{
+  height: 5px;
+  background-color:  hsl(216, 50%, 16%);
+  position: relative;
+  transform: translate(0,-75%);
+  border-radius: 0.5rem;
+}
+.container .box{
+  background-color:  hsl(178, 100%, 50%);
+  opacity: 1;
+  border-radius: 0.5rem;
+}
+.container .box .first {
+  width: 240px;
+  height: inherit;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+
+}
+.container .box .second {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 68%;
+  left: 44.9%;
+}
+.container .box :hover {
+opacity: 0;
+transition: 1s;
+}
+.container .equi {
+  margin: 1rem 0.1rem 1rem;
+  font-size: larger;
+  font-weight: bolder;
+  color: hsl(0, 0%, 100%);
+}
+.container .equi:hover {
+  color: hsl(178, 100%, 50%);
+}
+.container .text {
+  margin-bottom: 1.3rem;
+  color: hsl(215, 51%, 70%);
+}
+.container-2 {
+  display: flex;
+}
+.container-2 .left {
+  display: flex;
+  flex: 1;
+  color: hsl(178, 100%, 50%);
+}
+.container-2 .right {
+  display: flex;
+  flex: 1;
+  justify-content: right;
+}
+.container-2 .right p {
+  margin-left: 0.3rem;
+  color: hsl(215, 51%, 70%);
+}
+.container-2 .left p {
+  margin-left: 0.3rem;
+}
+.pseudo {
+  font-weight: bolder;
+  margin-left: 5px;
+  margin-bottom: 1rem;
+  color: hsl(215, 32%, 27%);
+}
+.container .down {
+  display: flex;
+  margin-top: -5px;
+}
+.container .down .flex1 img {
+  height: 30px;
+  border: hsl(0, 0%, 100%) solid;
+  border-radius: 50%;
+}
+.container .down .flex2 {
+  margin-top: 5px;
+  margin-left: 10px;
+  color: hsl(215, 51%, 70%);
+}
+.container .down .flex2 .name {
+  color: hsl(0, 0%, 100%);
+}
+.container .down .flex2 .name:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    padding: 2rem;
+  }
+  .container .box .first {
+    width: 300px;
+    height: 240px;
+  }
+  .container .equi {
+    margin: 1rem 0.1rem 1rem;
+    font-size: x-large;
+  }
+  .container .text {
+    font-size: 20px;
+  }
+  .container .down .flex1 img {
+    height: 40px;
+  }
+  .container .down .flex2 {
+    margin-top: 10px;
+    margin-left: 18px;
+  }
+  .pseudo:after {
+    content: "_______";
+  }
+}
